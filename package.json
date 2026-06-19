@@ -22,7 +22,7 @@
     "docs:watch": "npm run docs -- --watch --preserveWatchOutput",
     "doctoc": "doctoc README.md",
     "release": "standard-version",
-    "prepare": "husky install"
+    "prepare": "husky install || true && npm run build"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
